@@ -12,25 +12,25 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to bottom, #007c7c, #005a5a);
+            background: linear-gradient(to bottom, #007c7c, #004c4c);
             font-family: Arial, sans-serif;
         }
 
         .bubble-container {
             position: relative;
-            padding: 20px 40px;
+            padding: 20px 50px;
             background: white;
-            border-radius: 30px;
+            border-radius: 50px;
             display: inline-block;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .bubble-container::after {
             content: '';
             position: absolute;
             bottom: -10px;
-            left: 50px;
+            left: 40px;
             width: 0;
             height: 0;
             border-style: solid;
@@ -45,7 +45,8 @@
         }
 
         .emoji {
-            font-size: 32px;
+            font-size: 30px;
+            vertical-align: middle;
         }
 
         .username {
