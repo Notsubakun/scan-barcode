@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Bubble Teks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #007c7c, #005a5a);
+            font-family: Arial, sans-serif;
+        }
+
+        .bubble-container {
+            position: relative;
+            padding: 20px 40px;
+            background: white;
+            border-radius: 30px;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .bubble-container::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 0 10px;
+            border-color: white transparent transparent transparent;
+        }
+
+        .text {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .emoji {
+            font-size: 32px;
+        }
+
+        .username {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #007c7c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .username::before {
+            content: '💬';
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bubble-container">
+        <div class="text">YAHH.. ANDA KENA TIPU!!! <span class="emoji">😜</span></div>
+        <div class="username">@im_forresst</div>
+    </div>
+</body>
+</html>
